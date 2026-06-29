@@ -5,7 +5,7 @@ export default defineType({
   title: 'Faculty',
   type: 'document',
   fields: [
-    defineField({name: 'facultyname', title: 'Faculty Name', type: 'string', validation: (r) => r.required()}),
+    defineField({name: 'name', title: 'Name', type: 'string', validation: (r) => r.required()}),
     defineField({name: 'role', title: 'Role', type: 'string'}),
     defineField({name: 'bio', title: 'Bio', type: 'text'}),
     defineField({name: 'avatar', title: 'Avatar', type: 'image', options: {hotspot: true}}),
@@ -18,5 +18,5 @@ export default defineType({
       initialValue: false,
     }),
   ],
-  preview: {select: {title: 'facultyname', subtitle: 'role'}},
+  preview: {select: {title: 'name', subtitle: 'role'}},
 })
