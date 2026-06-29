@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "lib": ["dom", "dom.iterable", "esnext"]
+  },
+  "include": ["./schemaTypes", "./sanity.config.ts", "./sanity.cli.ts"]
+}
